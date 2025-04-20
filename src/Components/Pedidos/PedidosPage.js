@@ -22,7 +22,7 @@ const PedidosPage = () => {
       <div className="pedidos-form-page">
         <PedidosForm onAddPedido={handleAddPedido} />
       </div>
-      <div className="pedidos-list">
+      <div >
         <PedidosList
           pedidos={pedidos}
           onDeletePedido={handleDeletePedido}

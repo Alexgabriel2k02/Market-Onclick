@@ -3,6 +3,7 @@ import ProdutosList from "./ProdutosList";
 import ProdutosForm from "./ProdutosForm";
 import "./ProdutosPage.css";
 
+//produtos inputados no form para teste (retirar depois)
 const ProdutosPage = () => {
   const [produtos, setProdutos] = useState([
     { id: 1, nome: "Produto 1", preco: 10.0, estoque: 5 },

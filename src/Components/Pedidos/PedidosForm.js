@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./PedidosForm.css";
 
 const PedidosForm = ({ onAddPedido }) => {
   const [cliente, setCliente] = useState("");
@@ -20,7 +21,7 @@ const PedidosForm = ({ onAddPedido }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="container">
       <h2>Cadastrar Novo Pedido</h2>
       <label>Cliente:</label>
       <input

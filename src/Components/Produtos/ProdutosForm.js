@@ -28,65 +28,46 @@ const ProdutosForm = ({ onAddProduto }) => {
   };
 
   return (
-    <div className="produtos-form-page">
-      <header className="produtos-header">
-        <h1>
-          <span className="text-primary">MERCADO</span> ONCLICK
-        </h1>
-      </header>
-
-      <main className="produtos-container">
+    <div>
+      <main className="container">
         <h2>Cadastrar Novo Produto</h2>
-        <form onSubmit={handleSubmit} className="produtos-form">
-          <div className="form-group">
-            <label htmlFor="nome">Nome do Produto:</label>
-            <input
-              type="text"
-              id="nome"
-              name="nome"
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
-              placeholder="Digite o nome do produto"
-              required
-            />
-          </div>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="nome">Nome do Produto:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            value={nome}
+            onChange={(e) => setNome(e.target.value)}
+            required
+          />
 
-          <div className="form-group">
-            <label htmlFor="preco">Preço (R$):</label>
-            <input
-              type="number"
-              id="preco"
-              name="preco"
-              step="0.01"
-              value={preco}
-              onChange={(e) => setPreco(e.target.value)}
-              placeholder="Digite o preço"
-              required
-            />
-          </div>
+          <label htmlFor="preco">Preço (R$):</label>
+          <input
+            type="number"
+            id="preco"
+            name="preco"
+            value={preco}
+            onChange={(e) => setPreco(e.target.value)}
+            step="0.01"
+            required
+          />
 
-          <div className="form-group">
-            <label htmlFor="estoque">Estoque:</label>
-            <input
-              type="number"
-              id="estoque"
-              name="estoque"
-              value={estoque}
-              onChange={(e) => setEstoque(e.target.value)}
-              placeholder="Digite a quantidade em estoque"
-              required
-            />
-          </div>
+          <label htmlFor="estoque">Estoque:</label>
+          <input
+            type="number"
+            id="estoque"
+            name="estoque"
+            value={estoque}
+            onChange={(e) => setEstoque(e.target.value)}
+            required
+          />
 
-          <button type="submit" className="btn-primary">Salvar Produto</button>
+          <button type="submit" className="btn-primary">
+            Salvar Produto
+          </button>
         </form>
       </main>
-
-      <footer className="produtos-footer">
-        <p>
-          &copy; <span id="current-year"></span> MERCADO ONCLICK
-        </p>
-      </footer>
     </div>
   );
 };

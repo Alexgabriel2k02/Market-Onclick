@@ -19,7 +19,7 @@ const ClientesPage = () => {
 
   return (
     <div className="clientes-page">
-      <div className="clientes-form-page">
+      <div className="clientes-form">
         <ClientesForm onAddCliente={handleAddCliente} />
       </div>
       <div className="clientes-list">

@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ClientesList.css"; // Importando o CSS para estilização
+
 const ClientesList = ({ clientes, onDeleteCliente }) => {
   return (
     <div>
