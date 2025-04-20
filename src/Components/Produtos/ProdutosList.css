@@ -19,6 +19,14 @@
     line-height: 1.5;
     letter-spacing: 0.5px;
   }
+
+  .produto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem; 
+  }
+
 .produto-actions {
   display: flex;
   gap: 0.5rem;
